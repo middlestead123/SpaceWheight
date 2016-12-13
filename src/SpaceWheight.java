@@ -18,7 +18,7 @@ public class SpaceWheight {
 		Scanner userInput = new Scanner(System.in);
 		
 		double weight;
-		double spaceweight;
+		double spaceweight = 0;
 		String body;
 		
 		System.out.println("what is your weight? ");
@@ -64,5 +64,10 @@ public class SpaceWheight {
 		if (body.equalsIgnoreCase("pluto")){
 			spaceweight = weight*0.06;
 		}
-		}
+		
+		System.out.println("your weight on "+ body + " is "+ spaceweight);
+		
+		userInput.close();
+		
+	}
 }
